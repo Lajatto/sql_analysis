@@ -34,7 +34,7 @@ GROUP BY
 	1,2;
 ```
 <a href="https://lookerstudio.google.com/reporting/0eefca3d-9f2e-4e06-8a2d-11b8aa40fb49">
-<img src="images/Q1.jpg?raw=true"/>
+<img src="/Q1.jpg?raw=true"/>
 </a>
 
 ### 2. Similar monthly trend for gsearch but splitting out the brand and nonbrand campaigns. 
@@ -57,9 +57,9 @@ GROUP BY
 	1, 2;
 ```
 <a href="https://lookerstudio.google.com/reporting/e59a198e-cc2d-478d-b659-3dece8702153">
-<img src="images/Q22.jpg?raw=true"/>
+<img src="/Q22.jpg?raw=true"/>
 </a>
-<img src="images/Q222.jpg?raw=true"/>
+<img src="/Q222.jpg?raw=true"/>
 
 ### 3. Checking gsearch and nonbrand monthly trend for sessions and orders filtered by device type. 
 
@@ -81,7 +81,7 @@ GROUP BY
 	1, 2;
 ```
 <a href="https://lookerstudio.google.com/reporting/8e3734e2-4c7e-41f9-8f1d-92df96bdc59e">
-<img src="images/Q3.jpg?raw=true"/>
+<img src="/Q3.jpg?raw=true"/>
 
 ### 4. Comparing website traffic sources (paid vs organic searches)
 
@@ -103,7 +103,7 @@ GROUP BY
 	1, 2;
 ```
 <a href="https://lookerstudio.google.com/reporting/4ab05325-c81c-479e-8698-d547e7378491">
-<img src="images/Q4.jpg?raw=true"/>
+<img src="/Q4.jpg?raw=true"/>
 
 ### 5. Pulling sessions to orders conversion rates per month for the first 8 months of the website. 
 ```SQL
@@ -162,7 +162,7 @@ GROUP BY
 	1;
 ```
 <a href="https://lookerstudio.google.com/reporting/63dd1b31-841c-4c74-9710-fa1509f95223">
-<img src="images/Q5.jpg?raw=true"/>
+<img src="/Q5.jpg?raw=true"/>
 
 ### 6. Comparing conversion rate between two landing pages for a set period of time. 
 	
@@ -226,7 +226,7 @@ FROM nonbrand_test_sessions_w_orders
 GROUP BY 1; 
 ```
 <a href="https://lookerstudio.google.com/reporting/9e891676-bb7f-4846-8346-c123f061a3db">
-<img src="images/Q6.jpg?raw=true"/>
+<img src="/Q6.jpg?raw=true"/>
 
 ### 7. Full conversion funnel for the two landing pages analyzed in item 5. 
 	
@@ -332,7 +332,7 @@ FROM session_level_made_it_flagged
 GROUP BY 1;
 ```
 <a href="https://lookerstudio.google.com/reporting/863ed3b7-3916-4bd0-bade-d8f4db1f9b21">
-<img src="images/Q7.jpg?raw=true"/>
+<img src="/Q7.jpg?raw=true"/>
 
 ### 8. Revenue per billing page. Comparing two versions of the website's billing page. 
 ```SQL
@@ -368,7 +368,7 @@ GROUP BY
 	1,2;
 ```
 <a href="https://lookerstudio.google.com/reporting/80eeec39-cb33-4408-8951-e6b411af94d5">
-	<img src="images/Q8.jpg?raw=true"/></a>
+	<img src="/Q8.jpg?raw=true"/></a>
 
 ## Insights
 <ul>

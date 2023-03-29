@@ -317,12 +317,12 @@ GROUP BY 1
 -- then this as final output part 2 - click rates
 
 SELECT
-	CASE 
+    CASE 
 	WHEN saw_homepage = 1 THEN 'saw_homepage'
         WHEN saw_custom_lander = 1 THEN 'saw_custom_lander'
         ELSE 'uh oh... check logic' 
-	END AS segment, 
-	COUNT(DISTINCT CASE WHEN product_made_it = 1 THEN website_session_id ELSE NULL END)/COUNT(DISTINCT website_session_id) AS lander_click_rt,
+        END AS segment, 
+    COUNT(DISTINCT CASE WHEN product_made_it = 1 THEN website_session_id ELSE NULL END)/COUNT(DISTINCT website_session_id) AS lander_click_rt,
     COUNT(DISTINCT CASE WHEN mrfuzzy_made_it = 1 THEN website_session_id ELSE NULL END)/COUNT(DISTINCT CASE WHEN product_made_it = 1 THEN website_session_id ELSE NULL END) AS products_click_rt,
     COUNT(DISTINCT CASE WHEN cart_made_it = 1 THEN website_session_id ELSE NULL END)/COUNT(DISTINCT CASE WHEN mrfuzzy_made_it = 1 THEN website_session_id ELSE NULL END) AS mrfuzzy_click_rt,
     COUNT(DISTINCT CASE WHEN shipping_made_it = 1 THEN website_session_id ELSE NULL END)/COUNT(DISTINCT CASE WHEN cart_made_it = 1 THEN website_session_id ELSE NULL END) AS cart_click_rt,
@@ -338,7 +338,7 @@ GROUP BY 1;
 ```SQL
 CREATE TEMPORARY TABLE billing_pagezz
 SELECT 
-	website_sessions.website_session_id, 
+    website_sessions.website_session_id, 
     website_pageviews.pageview_url, 
     website_pageviews.created_at AS pageview_created_at,
     CASE WHEN website_pageviews.pageview_url = '/billing' THEN 1 ELSE 0 END as billing_page,
@@ -355,9 +355,9 @@ ORDER BY
 	1, 3;
 
 SELECT 
-	MONTH(billing_pagezz.pageview_created_at) AS month,
+    MONTH(billing_pagezz.pageview_created_at) AS month,
     billing_pagezz.pageview_url,
-	COUNT(billing_pagezz.website_session_id) AS sessions,
+    COUNT(billing_pagezz.website_session_id) AS sessions,
     SUM(orders.price_usd) AS total_sales,
     SUM(orders.items_purchased) AS total_goods_sold
 FROM 

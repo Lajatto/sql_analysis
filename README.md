@@ -1,4 +1,4 @@
-##<a href="https://lajatto.github.io/">Back to homepage</a>
+## <a href="https://lajatto.github.io/">Back to homepage</a>
 
 ## SQL Website Traffic Analysis
 

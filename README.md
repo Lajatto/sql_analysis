@@ -1,6 +1,6 @@
-## <a href="https://lajatto.github.io/">Back to homepage</a>
-
 ## SQL Website Traffic Analysis
+
+## <a href="https://lajatto.github.io/">Back to homepage</a>
 
 **Project description:** Website traffic analysis using SQL. Pulling monthly trends, checking the performance of various campaigns, checking conversion rates of landing pages, and doing full funnel conversion analysis. I used Google Looker Studio to visualize the results that I got. I also used MYSQL to do my queries and manage my database. 
 

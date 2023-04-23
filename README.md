@@ -1,4 +1,4 @@
-## SQL Website Traffic Analysis
+# SQL Website Traffic Analysis
 
 ## <a href="https://lajatto.github.io/">Back to homepage</a>
 
